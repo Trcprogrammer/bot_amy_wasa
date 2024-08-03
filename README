@@ -1,51 +1,50 @@
-### README
 
-# TRACY CHATBOT GLOBAL
 
-Este bot de WhatsApp, creado por Tracy, un apasionado programador, envía mensajes automáticamente a una lista de números de teléfono usando Selenium.
+# 🌟 Tracy's WhatsApp Bot 🌟
 
-## Uso
+¡Hola! Soy Tracy, un entusiasta de la programación, y he creado este bot para automatizar el envío de mensajes a través de WhatsApp usando Selenium. Con este bot, puedes enviar mensajes personalizados a una lista de contactos de manera fácil y rápida.
 
-1. **Instalación de dependencias**
+## 📦 Instalación de Dependencias
 
-   Asegúrate de tener `chromedriver_autoinstaller` y `selenium` instalados. Puedes instalar las dependencias ejecutando:
+Antes de empezar, asegúrate de tener instaladas las siguientes dependencias. Ejecuta el siguiente comando para instalarlas:
 
-   ```sh
-   pip install chromedriver-autoinstaller selenium
-   ```
+```sh
+pip install chromedriver-autoinstaller selenium
+```
 
-2. **Configuración**
+## ⚙️ Configuración
 
-   Crea un archivo `data.json` en el directorio principal con el siguiente formato:
+Para que el bot funcione, necesitarás configurar un archivo `data.json` en el directorio principal con el formato siguiente:
 
-   ```json
-   {
-       "phone_numbers": [
-           "+18298811619",
-           "+18297821156"
-       ],
-       "messages": [
-           "<3 Saludos, me llamo Amalia y soy una florista de flores eternas :)",
-           "Espero que estés bien. Descubre nuestra hermosa colección de flores frescas. Para ver más, visita nuestro perfil en Instagram: https://www.instagram.com/p/C9x02ZhvkZo/?igsh=MmhpcnEzaXV3N3N1",
-           "¡Gracias por tu tiempo y que tengas un excelente día! <3"
-       ]
-   }
-   ```
+```json
+{
+    "phone_numbers": [
+        "+18298811619",
+        "+18297821156"
+    ],
+    "messages": [
+        "<3 Hola, soy Amalia, una florista especializada en flores eternas :)",
+        "Espero que estés teniendo un gran día. Echa un vistazo a nuestra increíble colección de flores frescas. Más detalles en nuestro Instagram: https://www.instagram.com/p/C9x02ZhvkZo/?igsh=MmhpcnEzaXV3N3N1",
+        "¡Gracias por tu tiempo y que tengas un excelente día! <3"
+    ]
+}
+```
 
-3. **Ejecución del bot**
+## 🚀 Ejecución del Bot
 
-   Ejecuta el script principal para iniciar el bot:
+Para iniciar el bot, simplemente ejecuta el script principal:
 
-   ```sh
-   python bot.py
-   ```
+```sh
+python bot.py
+```
 
-   Sigue las instrucciones en la terminal para escanear el código QR de WhatsApp Web y enviar los mensajes.
+Sigue las instrucciones en la terminal para escanear el código QR de WhatsApp Web y empezar a enviar los mensajes.
 
-## Requisitos
+## 🛠️ Requisitos
 
 - Python 3.x
-- chromedriver-autoinstaller
-- selenium
+- `chromedriver-autoinstaller`
+- `selenium`
 
 Puedes encontrar el código fuente completo en [este repositorio](https://github.com/Trcprogrammer/bot_amy_wasa).
+
