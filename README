@@ -19,7 +19,6 @@ Para que el bot funcione, necesitarás configurar un archivo `data.json` en el d
 ```json
 {
     "phone_numbers": [
-        "+18298811619",
         "+18297821156"
     ],
     "messages": [
