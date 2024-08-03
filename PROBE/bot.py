@@ -15,7 +15,6 @@ class WhatsAppBot:
         self.chrome_options.add_argument("--disable-gpu")
         self.chrome_options.add_argument("--no-sandbox")
         self.chrome_options.add_argument("--disable-dev-shm-usage")
-        
         self.driver = webdriver.Chrome(options=self.chrome_options)
         self.phone_numbers = phone_numbers
         self.messages = messages
@@ -58,17 +57,14 @@ class WhatsAppBot:
     def quit(self):
         self.driver.quit()
 
-def load_phone_numbers_from_json(file_path):
+def load_data_from_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
 if __name__ == "__main__":
-    phone_numbers = load_phone_numbers_from_json('phone_numbers.json')
-    messages = [
-        "<3 Saludos, me llamo Amalia y soy una florista de flores eternas",
-        "Espero que estés bien. Descubre nuestra hermosa colección de flores frescas. Para ver más, visita nuestro perfil en Instagram: https://www.instagram.com/p/C9x02ZhvkZo/?igsh=MmhpcnEzaXV3N3N1",
-        "¡Gracias por tu tiempo y que tengas un excelente día!"
-    ]
+    data = load_data_from_json('data.json')
+    phone_numbers = data['phone_numbers']
+    messages = data['messages']
 
     bot = WhatsAppBot(phone_numbers, messages)
     bot.open_whatsapp_web()

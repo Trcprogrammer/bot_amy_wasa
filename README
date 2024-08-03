@@ -1,0 +1,51 @@
+### README
+
+# TRACY CHATBOT GLOBAL
+
+Este bot de WhatsApp, creado por Tracy, un apasionado programador, envía mensajes automáticamente a una lista de números de teléfono usando Selenium.
+
+## Uso
+
+1. **Instalación de dependencias**
+
+   Asegúrate de tener `chromedriver_autoinstaller` y `selenium` instalados. Puedes instalar las dependencias ejecutando:
+
+   ```sh
+   pip install chromedriver-autoinstaller selenium
+   ```
+
+2. **Configuración**
+
+   Crea un archivo `data.json` en el directorio principal con el siguiente formato:
+
+   ```json
+   {
+       "phone_numbers": [
+           "+18298811619",
+           "+18297821156"
+       ],
+       "messages": [
+           "<3 Saludos, me llamo Amalia y soy una florista de flores eternas :)",
+           "Espero que estés bien. Descubre nuestra hermosa colección de flores frescas. Para ver más, visita nuestro perfil en Instagram: https://www.instagram.com/p/C9x02ZhvkZo/?igsh=MmhpcnEzaXV3N3N1",
+           "¡Gracias por tu tiempo y que tengas un excelente día! <3"
+       ]
+   }
+   ```
+
+3. **Ejecución del bot**
+
+   Ejecuta el script principal para iniciar el bot:
+
+   ```sh
+   python bot.py
+   ```
+
+   Sigue las instrucciones en la terminal para escanear el código QR de WhatsApp Web y enviar los mensajes.
+
+## Requisitos
+
+- Python 3.x
+- chromedriver-autoinstaller
+- selenium
+
+Puedes encontrar el código fuente completo en [este repositorio](https://github.com/Trcprogrammer/bot_amy_wasa).
