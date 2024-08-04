@@ -22,9 +22,7 @@ Para que el bot funcione, necesitarás configurar un archivo `data.json` en el d
         "+18297821156"
     ],
     "messages": [
-        "<3 Hola, soy Amalia, una florista especializada en flores eternas :)",
-        "Espero que estés teniendo un gran día. Echa un vistazo a nuestra increíble colección de flores frescas. Más detalles en nuestro Instagram: https://www.instagram.com/p/C9x02ZhvkZo/?igsh=MmhpcnEzaXV3N3N1",
-        "¡Gracias por tu tiempo y que tengas un excelente día! <3"
+
     ]
 }
 ```
