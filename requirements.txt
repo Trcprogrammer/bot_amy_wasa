@@ -1,0 +1,4 @@
+selenium==4.11.2
+chromedriver-autoinstaller==0.5.1
+termcolor==2.3.0
+art==5.9
